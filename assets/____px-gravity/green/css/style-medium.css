@@ -1,0 +1,23 @@
+/*
+	Gravity by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Feature */
+
+	.feature {
+		text-align: center;
+	}
+
+		.feature .image {
+			margin: 0 auto 4em auto;
+			max-width: 100%;
+			width: 22em;
+		}
+
+/* Main */
+
+	#main {
+		padding: 4em 0 4em 0;
+	}

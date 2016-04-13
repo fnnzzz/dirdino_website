@@ -1,0 +1,48 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Gravity by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	body, input, select, textarea {
+		font-size: 11pt;
+	}
+
+/* Carousel */
+
+	.carousel-wrapper {
+		.nav {
+			width: 4em;
+		}
+	}
+
+	.carousel {
+		article {
+			img {
+				width: 20em;
+			}
+		}
+	}
+
+/* Header */
+
+	#header {
+		&.alt {
+			padding: 2.5em 0 3.5em 0;
+
+			p {
+				margin: 0.75em 0 0 0;
+			}
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		@include padding(7em, 0, (1em, 0, 0, 0));
+	}

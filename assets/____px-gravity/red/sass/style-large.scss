@@ -1,0 +1,124 @@
+@import 'vars';
+@import 'mixins';
+
+/*
+	Gravity by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+/* Section/Article */
+
+	section, header, article {
+		&.special {
+			text-align: center;
+		}
+	}
+
+	header {
+		h2 + p {
+			font-size: 1em;
+		}
+
+		h3 + p {
+			font-size: 1em;
+		}
+	}
+
+/* Feature */
+
+	.feature {
+		margin-top: 4em;
+		padding-top: 6em;
+	}
+
+/* Carousel */
+
+	.carousel-wrapper {
+		.nav {
+			width: 3.5em;
+		}
+	}
+
+	.carousel {
+		article {
+			img {
+				width: 18em;
+			}
+		}
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		@include padding(6em, 0);
+	}
+
+/* Header */
+
+	#header {
+		height: 3.85em;
+		line-height: 3.85em;
+
+		h1 {
+			a {
+				font-size: 1em;
+			}
+		}
+
+		nav {
+			> ul {
+				> li {
+					a {
+						font-size: 0.8em;
+					}
+				}
+			}
+		}
+
+		&.alt {
+			h1 {
+				font-size: 1.5em;
+			}
+		}
+	}
+
+/* Banner */
+
+	#banner {
+		@include padding(6em, 0, (1em, 0, 0, 0));
+
+		h2 {
+			font-size: 2em;
+		}
+
+		p {
+			font-size: 1em;
+		}
+	}
+
+/* Main */
+
+	#main {
+		@include padding(6em, 0, (-2em, 0, 0, 0));
+	}
+
+/* Footer */
+
+	#footer {
+		@include padding(6em, 0);
+	}
