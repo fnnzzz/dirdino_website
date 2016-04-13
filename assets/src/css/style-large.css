@@ -1,0 +1,101 @@
+/*
+	Gravity by Pixelarity
+	pixelarity.com @pixelarity
+	License: pixelarity.com/license
+*/
+
+/* Basic */
+
+	h2 {
+		font-size: 1.5em;
+	}
+
+	h3 {
+		font-size: 1.25em;
+	}
+
+	h4 {
+		font-size: 1em;
+	}
+
+/* Section/Article */
+
+	section.special, header.special, article.special {
+		text-align: center;
+	}
+
+	header h2 + p {
+		font-size: 1em;
+	}
+
+	header h3 + p {
+		font-size: 1em;
+	}
+
+/* Feature */
+
+	.feature {
+		margin-top: 4em;
+		padding-top: 6em;
+	}
+
+/* Carousel */
+
+	.carousel-wrapper .nav {
+		width: 3.5em;
+	}
+
+	.carousel article img {
+		width: 18em;
+	}
+
+/* Wrapper */
+
+	.wrapper {
+		padding: 6em 0 4em 0;
+	}
+
+/* Header */
+
+	#header {
+		height: 3.85em;
+		line-height: 3.85em;
+	}
+
+		#header h1 a {
+			font-size: 1em;
+		}
+
+		#header nav > ul > li a {
+			font-size: 0.8em;
+		}
+
+		#header.alt h1 {
+			font-size: 1.5em;
+		}
+
+/* Banner */
+
+	#banner {
+		padding: 7em 0 4em 0;
+	}
+
+		#banner h2 {
+			font-size: 2em;
+		}
+
+		#banner p {
+			font-size: 1em;
+		}
+
+/* Main */
+
+	#main {
+		padding: 4em 0 4em 0;
+	}
+
+/* Footer */
+
+	#footer {
+		padding: 6em 0 4em 0;
+	}

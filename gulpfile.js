@@ -28,7 +28,7 @@ var jade_except = '_*.jade';
 
 // ----------------------------------------------------------------
 
-gulp.task('default', ['browser-sync', 'sass', 'compressjs', 'concatjs', 'libs', 'compressimages', 'jade', 'html', 'fonts'], function () {
+gulp.task('default', ['browser-sync', 'sass', 'compressjs', 'concatjs', 'libs', 'compressimages', 'jade', 'html', 'fonts', 'css'], function () {
     gulp.watch("./assets/src/sass/**/*.scss", ['sass']);
     gulp.watch("./assets/src/js/**/*.js", ['compressjs']);
     gulp.watch("./assets/src/js.concat/**/*.js", ['concatjs']);
@@ -96,6 +96,13 @@ gulp.task('libs', function() {
 gulp.task('fonts', function() {
   gulp.src('./assets/src/fonts/**')
     .pipe(gulp.dest('./assets/dist/fonts/'))
+    .pipe(browserSync.stream())
+});
+
+
+gulp.task('css', function() {
+  gulp.src('./assets/src/css/**')
+    .pipe(gulp.dest('./assets/dist/css/'))
     .pipe(browserSync.stream())
 });
 
