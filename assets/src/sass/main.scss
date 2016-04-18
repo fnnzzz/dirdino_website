@@ -1,0 +1,73 @@
+@import 'vars';
+@import 'mixins';
+@import 'social';
+@import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon'; 
+
+#loader {
+    background: none repeat scroll 0 0 #ffffff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+
+textarea {
+	max-width: 100%;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+select,
+textarea {
+	@include transition(all 0.3s ease);
+
+	&:focus {
+		border-color: #EDF2F4;
+		box-shadow: 0 0 0 1px #EDF2F4;
+		@include transition(all 0.3s ease);
+	}
+}
+
+
+.labeled-icons {
+	a {
+		color: #888888;
+		text-decoration: none;
+
+		&:hover {
+			text-decoration: underline;
+			color: #777;
+		}
+	}
+}
+
+
+.follow_us_on_social  {
+	text-align: center;
+	margin: rem(60) 0 rem(16);
+}
+
+
+#footer {
+	&.-empty {
+		padding: rem(40) 0 rem(30);
+
+		.copyright { 
+			margin-top: 0;
+		}
+	}
+}
+
+
+.form_contacts {
+	margin-top: rem(80);
+}
+
+.submit_contacts_form {
+	padding: 0 rem(50) !important;
+}

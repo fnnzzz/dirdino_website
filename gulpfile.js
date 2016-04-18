@@ -20,6 +20,7 @@ var pathh = require('path');
 var jade = require('gulp-jade');
 var gulpIgnore = require('gulp-ignore');
 var htmlmin = require('gulp-htmlmin');
+var mainBowerFiles = require('main-bower-files');
 
 // ----------------------------------------------------------------
 
@@ -92,7 +93,6 @@ gulp.task('libs', function() {
     .pipe(browserSync.stream())
 });
 
-
 gulp.task('fonts', function() {
   gulp.src('./assets/src/fonts/**')
     .pipe(gulp.dest('./assets/dist/fonts/'))
@@ -125,6 +125,7 @@ gulp.task('jade', function() {
     .pipe(gulpIgnore.exclude(jade_except))
     .pipe(jade()) 
     .pipe(gulp.dest('./'))
+    .pipe(browserSync.stream())
 });
 
 // gulp.task('html-prettify', function() {
@@ -137,6 +138,7 @@ gulp.task('html', function() {
   gulp.src('./assets/src/templates/**/*.html')
     .pipe(htmlmin({collapseWhitespace: true, minifyCSS: true, minifyJS: true, removeComments: true}))
     .pipe(gulp.dest('./'))
+    .pipe(browserSync.stream())
 });
 
 // ------------------ UNITY DJANGO TASKS ----------------------------
