@@ -24,3 +24,27 @@
 	#main {
 		@include padding(6em, 0, (-2em, 0, 0, 0));
 	}
+
+
+	#header {
+
+		#logo {
+			a {
+				font-size: 0.85rem;
+			} 
+		}
+
+		nav {
+			> ul {
+				> li {
+					margin-left: 10px;
+					&:first-child {
+						margin-left: 0;
+					}
+					a {
+						font-size: 0.7em;  
+					}
+				}
+			}
+		}
+	}

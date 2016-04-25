@@ -25,43 +25,45 @@ Template Name: contacts-page
 					</header>
 					<div class="row 200%">
 						<div class="8u 12u$(medium) 12u$(small)">
-							<iframe src="https://www.google.com/maps/embed?pb=!1m17!1m8!1m3!1d5084.655701718856!2d30.449156!3d50.416363!3m2!1i1024!2i768!4f13.1!4m6!3e6!4m0!4m3!3m2!1d50.416363!2d30.449156!5e0!3m2!1sru!2sua!4v1461003448224" width="100%" height="470" frameborder="0" style="border:0" allowfullscreen></iframe>
+							<iframe width="100%" height="310" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.327668512495!2d30.44696731529604!3d50.41636639770195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c94b672a3e87%3A0x31fc9eab6f9ae299!2z0JzQsNGB0YLQtdGA0YHQutCw0Y8g0JTRi9GA0LTRi9C90L4!5e0!3m2!1sru!2sua!4v1460115866026" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 						</div>
 
-						<div class="4u$ 12u$(medium) 12u$(small)">
-							<ul class="labeled-icons contacts_page">
-								<li>
-									<h4 class="icon fa-envelope"><span class="label">E-mail</span></h4>
-									<a href="mailto:info@dirdino.com.ua">info@dirdino.com.ua</a>
-								</li>
-								<li>
-									<h4 class="icon fa-phone"><span class="label">Телефон</span></h4>
-									<a href="tel:0444514856">(044) 451 48 56</a>
-								</li>
-								<li>
-									<h4 class="icon fa-home"><span class="label">Адрес</span></h4>
-										03151, г. Киев, Воздухофло́тский просп., 72, офис № 42
-								</li>
-								<li>
-									<h4 class="icon fa-calendar-o"><span class="label">График работы:</span></h4>
-									Работаем с 9:00 до 18:00 (суббота и воскресенье выходные)
-								</li>
-							</ul>
-					
-							<h5 class="follow_us_on_social">Присоединяйтесь к нам в соц.сетях</h5>
-
-							<div class="social-buttons">
-								<a href="#" class="social-button facebook">
-									<i class="fa fa-facebook"></i></a>
-
-								<a href="#" class="social-button vk">
-									<i class="fa fa-vk"></i></a>	
-
-								<a href="#" class="social-button skype">
-									<i class="fa fa-skype"></i></a>
+							<div class="4u$ 12u$(medium) 12u$(small)">
+								<ul class="labeled-icons contacts_page">
+									<li>
+										<h4 class="icon fa-envelope"><span class="label">E-mail</span></h4>
+										<a href="mailto:<?php echo get_theme_mod( 'contacts_mail' ); ?>"><?php echo get_theme_mod( 'contacts_mail' ); ?></a>
+									</li>
+									<li>
+										<h4 class="icon fa-phone"><span class="label">Телефон</span></h4>
+										<a href="tel:<?php echo get_theme_mod( 'contacts_phone1' ); ?>"><?php echo get_theme_mod( 'contacts_phone1' ); ?></a>
+										<br>
+										<a href="tel:<?php echo get_theme_mod( 'contacts_phone2' ); ?>"><?php echo get_theme_mod( 'contacts_phone2' ); ?></a>
+									</li>
+									<li>
+										<h4 class="icon fa-home"><span class="label">Адрес</span></h4>
+											<?php echo get_theme_mod( 'contacts_adress' ); ?>
+									</li>
+									<li>
+										<h4 class="icon fa-calendar-o"><span class="label">График работы:</span></h4>
+										<?php echo get_theme_mod( 'contacts_graphic' ); ?>
+									</li>
+								</ul>
+												
+								<!-- <h5 class="follow_us_on_social">Присоединяйтесь к нам в соц.сетях</h5>
+							
+								<div class="social-buttons">
+									<a href="#" class="social-button facebook">
+										<i class="fa fa-facebook"></i></a>
+							
+									<a href="#" class="social-button vk">
+										<i class="fa fa-vk"></i></a>	
+							
+									<a href="#" class="social-button skype">
+										<i class="fa fa-skype"></i></a>
+								</div> -->
+							
 							</div>
-
-						</div>
 
 
 						<div class="12u form_contacts" id="contacts_form">
@@ -110,15 +112,16 @@ Template Name: contacts-page
 				</div>
 			</div>
 			
-		<div id="loader"><!-- ama preloader--></div>
-		
+			
+		<?php wp_footer(); ?>
+
+
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/main.css">
 
 		<!--[if lte IE 8]><script src="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/html5shiv.js"></script><![endif]-->
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/dist/js/concat.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/v8.css" /><![endif]-->
 
-		<?php wp_footer(); ?>
 
 	</body>
 </html>

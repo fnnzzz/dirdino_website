@@ -13,7 +13,7 @@
 				<h2>Мастерская Дырдыно</h2>
 				<p>МЕБЕЛЬ НА ЗАКАЗ В КИЕВЕ И РЕГИОНАХ</p>
 				<ul class="actions">
-					<li><a href="#" class="button special">Ознакомиться</a></li>
+					<li><a href="#learn" class="button special read_scroll">Ознакомиться</a></li>
 				</ul>
 			</section>
 
@@ -24,17 +24,17 @@
 						<div class="row 200%">
 							<div class="8u 12u$(medium)">
 								<header class="major">
-									<h2>Donec nec justo eget</h2>
-									<p>Aliquam commodo sed magna</p>
+									<h2><?php echo get_theme_mod( 'main_title_1' ); ?></h2>
+									<p><?php echo get_theme_mod( 'main_subtitle_1' ); ?></p>
 								</header>
-								<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quisgravida id, est. Sed lectuisto. Praesent lorem ipsum dolor sit amet blandit elementum hendrerit dolor sit amet feugiat. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing.</p>
+								<p><?php echo get_theme_mod( 'main_descr_1' ); ?></p>
 								<ul class="actions">
-									<li><a href="#" class="button alt">Learn more</a></li>
+									<li><a href="<?php echo get_theme_mod( 'main_link_1' ); ?>" class="button alt"><?php echo get_theme_mod( 'main_textlink_1' ); ?></a></li>
 								</ul>
 							</div>
 							<div class="4u$ 12u$(medium) important(medium)">
 								<span class="image fit rounded">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/pic01.jpg" alt="" />
+									<img src="<?php echo get_theme_mod( 'main_pic_1' ); ?>" alt="Наши достижения" />
 								</span>
 							</div>
 						</div>
@@ -43,17 +43,17 @@
 						<div class="row 200%">
 							<div class="4u 12u$(medium)">
 								<span class="image fit rounded">
-									<img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/pic02.jpg" alt="" class="rounded" />
+									<img src="<?php echo get_theme_mod( 'main_pic_2' ); ?>" alt="Наши достижения" class="rounded" />
 								</span>
 							</div>
 							<div class="8u$ 12u$(medium)">
 								<header class="major">
-									<h2>Aliquam blandit mauris</h2>
-									<p>Vivamus nulla ante vestibulum</p>
+									<h2><?php echo get_theme_mod( 'main_title_2' ); ?></h2>
+									<p><?php echo get_theme_mod( 'main_subtitle_2' ); ?></p>
 								</header>
-								<p>Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero, faucibus adipiscing, commodo quisgravida id, est. Sed lectuisto. Praesent lorem ipsum dolor sit amet blandit elementum hendrerit dolor sit amet feugiat. Sed egestas, ante et vulputate volutpat, eros pede semper est, vitae luctus metus libero eu augue. Morbi purus libero faucibus.</p>
+								<p><?php echo get_theme_mod( 'main_descr_2' ); ?></p>
 								<ul class="actions">
-									<li><a href="#" class="button alt">Learn more</a></li>
+									<li><a href="<?php echo get_theme_mod( 'main_link_2' ); ?>" class="button alt"><?php echo get_theme_mod( 'main_textlink_2' ); ?></a></li>
 								</ul>
 							</div>
 						</div>
@@ -71,39 +71,39 @@
 				</div>
 				<section class="carousel">
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/01.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/01.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/01.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/01.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/02.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/02.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/02.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/02.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/03.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/03.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/03.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/03.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/04.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/04.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/04.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/04.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/05.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/05.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/05.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/05.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/01.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/01.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/01.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/01.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/02.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/02.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/02.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/02.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/03.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/03.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/03.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/03.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/04.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/04.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/04.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/04.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/05.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/05.jpg" alt="" title="Lorem ipsum dolor sit amet" /></a>
+						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/05.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/05.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 				</section>
 				<div class="container">
 					<ul class="actions align-center">
-						<li><a href="#" class="button alt">Галерея работ</a></li>
+						<li><a href="<?php echo get_page_link(19); ?>" class="button alt">Галерея работ</a></li>
 					</ul>
 				</div>
 			</section>

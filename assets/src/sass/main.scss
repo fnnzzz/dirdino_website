@@ -3,6 +3,10 @@
 @import 'social';
 @import '../../../bower_components/bourbon/app/assets/stylesheets/bourbon'; 
 
+
+
+
+
 #loader {
     background: none repeat scroll 0 0 #ffffff;
     bottom: 0;
@@ -12,8 +16,44 @@
     right: 0;
     top: 0;
     width: 100%;
-    z-index: 9999;
+    z-index: 10001;
 }
+
+.spinner {
+  position: absolute;
+  @include center(xy);
+  width: 40px;
+  height: 40px;
+  background-color: #444;
+
+  border-radius: 100%;  
+  -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+  animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+  0% { -webkit-transform: scale(0) }
+  100% {
+    -webkit-transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+@keyframes sk-scaleout {
+  0% { 
+    -webkit-transform: scale(0);
+    transform: scale(0);
+  } 100% {
+    -webkit-transform: scale(1.0);
+    transform: scale(1.0);
+    opacity: 0;
+  }
+}
+
+
+
+
+
 
 textarea {
 	max-width: 100%;
@@ -24,12 +64,12 @@ input[type="password"],
 input[type="email"],
 select,
 textarea {
-	@include transition(all 0.3s ease);
+	@include transition(border-color 0.3s ease, box-shadow 0.3s ease);
 
 	&:focus {
 		border-color: #EDF2F4;
 		box-shadow: 0 0 0 1px #EDF2F4;
-		@include transition(all 0.3s ease);
+		@include transition(border-color 0.3s ease, box-shadow 0.3s ease);
 	}
 }
 
@@ -65,8 +105,24 @@ textarea {
 
 .form_contacts {
 	margin-top: rem(80);
+
+  & input, 
+  & textarea {
+    background-color: #EBEBEB;
+
+    &:focus {
+      border-color: #B8B8B8
+    }
+
+  }
 }
 
 .submit_contacts_form {
 	padding: 0 rem(50) !important;
+}
+
+#header nav ul li a {
+  &:hover {
+    color: #000;
+  } 
 }
