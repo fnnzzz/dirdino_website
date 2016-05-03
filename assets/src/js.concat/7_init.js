@@ -21,7 +21,7 @@
 		plugins: {
 			layers: {
 				titleBar: {
-					breakpoints: 'small',
+					breakpoints: 'medium',
 					height: 44,
 					html: '<span class="toggle" data-action="toggleLayer" data-args="navPanel"></span><span class="title" data-action="copyText" data-args="logo"></span>',
 					position: 'top-left',
@@ -30,7 +30,7 @@
 				},
 				navPanel: {
 					animation: 'overlayX',
-					breakpoints: 'small',
+					breakpoints: 'medium',
 					clickToHide: true,
 					height: '100%',
 					hidden: true,

@@ -65,8 +65,7 @@
 			<section id="two" class="wrapper style1 special">
 				<div class="container">
 					<header class="major">
-						<h2>Наш Instagram</h2>
-						<p>вы можете ознакомиться с последними работами и <a href="#">подписаться</a></p>
+						<h2>Наши последние работы</h2>
 					</header>
 				</div>
 				<section class="carousel">

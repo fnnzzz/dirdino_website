@@ -28,7 +28,7 @@ Template Name: contacts-page
 							<iframe width="100%" height="310" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.327668512495!2d30.44696731529604!3d50.41636639770195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c94b672a3e87%3A0x31fc9eab6f9ae299!2z0JzQsNGB0YLQtdGA0YHQutCw0Y8g0JTRi9GA0LTRi9C90L4!5e0!3m2!1sru!2sua!4v1460115866026" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 						</div>
 
-							<div class="4u$ 12u$(medium) 12u$(small)">
+							<div class="4u$ 12u$(medium) 12u$(small) contact_right_info">
 								<ul class="labeled-icons contacts_page">
 									<li>
 										<h4 class="icon fa-envelope"><span class="label">E-mail</span></h4>
@@ -92,8 +92,12 @@ Template Name: contacts-page
  								</div>
 
  								<div class="12u$">
- 									<ul class="actions" style="text-align: center;">
+ 									<ul class="actions footer_actions" style="text-align: center;">
  										<li><input type="submit" value="Отправить" class="special submit_contacts_form"></li>
+ 										<li class="footer_attach_file"> 
+ 											<a href="#" class="button special add-file"><span class="fa fa-plus add_file_icon"></span>Прикрепить файл</a>
+											<input type="file">
+ 										</li>
  									</ul>
  								</div>
 
@@ -103,6 +107,53 @@ Template Name: contacts-page
 					</div>
 				</div>
 			</section>
+
+
+		<a href="#feedback_modal" class="contacts_feedback_fixed_btn button special">
+			Обратная связь
+		</a>
+
+
+		<div class="remodal" data-remodal-id="feedback_modal">
+		  <button data-remodal-action="close" class="remodal-close"></button>
+		  <h2>Обратная связь</h2>
+		  <p>
+		   Заполните простую форму обратной связи и наши менеджеры свяжутся с Вами в ближайшее время.
+		  </p>
+		  
+
+		  <div class="row modal_feedback">
+			<div class="4u 12u$(small)">
+					<input type="text" name="name" id="name" value="" placeholder="Ваше имя">
+				</div>
+				
+
+				<div class="4u 12u$(small)">
+					<input type="email" name="email" id="email" value="" placeholder="Ваш E-Mail">
+				</div>
+				
+
+				<div class="4u 12u$(small)">
+					<input type="text" name="phone" id="phone" value="" placeholder="Ваш телефон">
+				</div>
+
+				<div class="12u">
+					<textarea name="message" id="message" placeholder="Ваше сообщение" rows="5"></textarea>
+					</div>
+
+					<div class="12u$">
+						<ul class="actions footer_actions -modal" style="text-align: center;">
+							<li><input type="submit" value="Отправить" class="special submit_contacts_form"></li>
+							<li class="footer_attach_file"> 
+								<a href="#" class="button special add-file"><span class="fa fa-plus add_file_icon"></span>Прикрепить файл</a>
+							<input type="file">
+							</li>
+						</ul>
+					</div>
+
+
+		  </div>
+		</div>
 
 
 		<!-- Footer -->
@@ -121,6 +172,13 @@ Template Name: contacts-page
 		<!--[if lte IE 8]><script src="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/html5shiv.js"></script><![endif]-->
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/dist/js/concat.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/v8.css" /><![endif]-->
+
+
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal.css"></link>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal-default-theme.css"></link>
+		<script src="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal.min.js"></script>
+
+
 
 
 	</body>

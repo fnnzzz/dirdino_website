@@ -29,8 +29,12 @@
  								</div>
 
  								<div class="12u$">
- 									<ul class="actions">
+ 									<ul class="actions footer_actions">
  										<li><input type="submit" value="Отправить" class="special"></li>
+ 										<li class="footer_attach_file"> 
+ 											<a href="#" class="button special add-file"><span class="fa fa-plus add_file_icon"></span>Прикрепить файл</a>
+											<input type="file">
+ 										</li>
  									</ul>
  								</div>
 
@@ -82,6 +86,8 @@
 			</div>
 	
 
+
+
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/main.css">
 
 		<?php wp_footer(); ?>
@@ -89,7 +95,6 @@
 		<!--[if lte IE 8]><script src="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/html5shiv.js"></script><![endif]-->
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/dist/js/concat.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/v8.css" /><![endif]-->
-
 
 	</body>
 </html>
