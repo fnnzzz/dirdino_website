@@ -1,9 +1,3 @@
-<?php
-/*
-Template Name: blog-page
-*/
-?>
-
 <?php 
 	get_header(); 
 ?>
@@ -18,7 +12,20 @@ Template Name: blog-page
 			<section id="main">
 				<div class="container">
 					<header class="major">
-						<h2><?php the_title(); ?></h2>
+						<?php 
+
+							$category = get_the_category();
+
+							if($category[0]->term_id !== '') {
+								$cat_id = $category[0]->term_id;
+							}
+							else {
+								$cat_id = '';	
+							}	
+
+						?>
+
+						<h2>Блог — категория "<?php echo $category[0]->name ?>" </h2>
 					</header>
 					<div class="row 200%">
 						<div class="8u 12u$(medium)">
@@ -41,10 +48,8 @@ Template Name: blog-page
 										<h4>Рубрики</h4>
 										<ul class="blog_categories_list">
 										    
-											<?php
-
-												require_once('_blog-cats.php')
-											
+											<?php 
+												require_once('_blog-cats.php');
 											?>
 
 										</ul>

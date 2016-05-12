@@ -2,7 +2,7 @@
 <html lang="ru">
 	<head>
 		<meta charset="UTF-8" />
-		<title><?php bloginfo('name'); ?></title>
+		<title><?php wp_title() ?></title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<link rel="pingback" href="<?php bloginfo('pingback_url'); ?>" />
 

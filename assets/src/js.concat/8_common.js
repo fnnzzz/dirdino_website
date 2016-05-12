@@ -55,3 +55,13 @@ function calcSearchMarginTop() {
 
 	jQuery('#searchbar').css('marginTop', header_height);
 }
+
+
+jQuery(document).ready(function() {
+	/* Make feedback button shake every 4 sec until it is clicked. */
+	var pid = setInterval(function() {
+		var fd = jQuery('.feedback.shake');
+		if (fd.length > 0) fd.removeClass('shake');
+		else jQuery('.feedback').addClass('shake');
+	}, 2000);
+});
