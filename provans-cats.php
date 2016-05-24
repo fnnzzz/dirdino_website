@@ -92,6 +92,28 @@ Template Name: provans-cats
 											</h3>
 										</div>
 									</div>
+
+									<?php 
+
+										// // check if the repeater field has rows of data
+										// if( have_rows('provans_subcategory') ):
+
+										//  	// loop through the rows of data
+										//     while ( have_rows('provans_subcategory') ) : the_row();
+
+										//         // display a sub field value
+										//         the_sub_field('provans_subc_name');
+
+										//     endwhile;
+
+										// else :
+
+										//     // no rows found
+
+										// endif;
+
+
+									 ?>
 								</div>
 							</div>
 

@@ -122,3 +122,8 @@
 	#footer {
 		@include padding(6em, 0);
 	}
+
+
+	#header #logo {
+		outline: 1px solid red;
+	}

@@ -688,9 +688,56 @@ textarea {
 }
 
 
-// .cats_prov {
-  
-//   & * {
-//     outline: 1px solid red;
-//   }
-// }
+@media only screen and (max-width: 1185px) and (min-width: 980px) {
+  #header #logo {
+    left: 1em;
+
+    & a {
+      font-size: 0.8em;
+    }
+  }
+
+  #header nav > ul > li {
+      margin-left: 1em;
+  } 
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 980px) {
+   #header nav > ul > li {
+      margin-left: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1186px) {
+  #header nav > ul > li {
+    margin-left: 1.05em;
+  }
+}
+
+
+#searchbar {
+  tr {
+    border: none;
+    background: #fff;
+  }
+  & td {
+    padding: 0;
+    background: #fff;
+  }
+  & input {
+    border: none;
+    background: #fff;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &  .gsc-input-focus {
+    border: none;
+    
+  } 
+}

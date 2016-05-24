@@ -19,6 +19,7 @@
 						<li><a href="#">Прихожие</a></li>
 					</ul>
 				</li>
+				<li><a href="<?php echo get_page_link(146); ?>">Мебель-прованс</a></li>
 				<li><a href="<?php echo get_page_link(14); ?>">Партнёрам</a></li>
 				<li><a href="<?php echo get_page_link(17); ?>">Заказчикам</a></li>
 				<li><a href="<?php echo get_page_link(113); ?>">Блог</a></li>
@@ -30,6 +31,23 @@
 						<li><a href="tel:<?php echo get_theme_mod( 'contacts_phone2' ); ?>"><?php echo get_theme_mod( 'contacts_phone2' ); ?></a></li>
 					</ul>
 				</li>
+
+
+
+
+<script>
+  (function() {
+    var cx = '003313917530969506436:2zxrwmrm8da';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+
+
 				<li id="small_hide">
 					<a href="#" id="searchtoggl"><i class="fa fa-search fa-lg"></i></a>
 				</li>
@@ -38,9 +56,11 @@
 	</div>
 
 	  <div id="searchbar" class="clearfix">
-	    <form id="searchform" method="get" action="#">
+<!-- 	    <form id="searchform" method="get" action="#">
 	      <button type="submit" id="searchsubmit" class="fa fa-search"></button>
-	      <input type="text" name="s" id="s" placeholder="поиск..." autocomplete="off">
-	      
-	    </form>
+	      <input type="text" name="s" id="s" placeholder="поиск..." autocomplete="off">     
+	    </form> -->
+
+	    <gcse:searchbox-only></gcse:searchbox-only>
+
 	  </div>

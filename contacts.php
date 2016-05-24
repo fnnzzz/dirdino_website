@@ -25,7 +25,7 @@ Template Name: contacts-page
 					</header>
 					<div class="row 200%">
 						<div class="8u 12u$(medium) 12u$(small)">
-							<iframe width="100%" height="310" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.327668512495!2d30.44696731529604!3d50.41636639770195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c94b672a3e87%3A0x31fc9eab6f9ae299!2z0JzQsNGB0YLQtdGA0YHQutCw0Y8g0JTRi9GA0LTRi9C90L4!5e0!3m2!1sru!2sua!4v1460115866026" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
+							<iframe width="100%" height="480" style="border: 0;" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2542.327668512495!2d30.44696731529604!3d50.41636639770195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4c94b672a3e87%3A0x31fc9eab6f9ae299!2z0JzQsNGB0YLQtdGA0YHQutCw0Y8g0JTRi9GA0LTRi9C90L4!5e0!3m2!1sru!2sua!4v1460115866026" frameborder="0" allowfullscreen="allowfullscreen"></iframe>
 						</div>
 
 							<div class="4u$ 12u$(medium) 12u$(small) contact_right_info">
@@ -50,7 +50,7 @@ Template Name: contacts-page
 									</li>
 								</ul>
 												
-								<!-- <h5 class="follow_us_on_social">Присоединяйтесь к нам в соц.сетях</h5>
+								<h5 class="follow_us_on_social">Присоединяйтесь к нам в соц.сетях</h5>
 							
 								<div class="social-buttons">
 									<a href="#" class="social-button facebook">
@@ -61,7 +61,7 @@ Template Name: contacts-page
 							
 									<a href="#" class="social-button skype">
 										<i class="fa fa-skype"></i></a>
-								</div> -->
+								</div>
 							
 							</div>
 

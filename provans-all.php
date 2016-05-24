@@ -63,6 +63,29 @@ Template Name: provans-all
 								</h3>
 							</div>
 						</div>
+
+
+						<?php 
+
+							// // check if the repeater field has rows of data
+							// if( have_rows('categories') ):
+
+							//  	// loop through the rows of data
+							//     while ( have_rows('categories') ) : the_row();
+
+							//         // display a sub field value
+							//         the_sub_field('name');
+
+							//     endwhile;
+
+							// else :
+
+							//     // no rows found
+
+							// endif;
+
+						 ?>
+
 					</div>
 				</div>
 			</section>
