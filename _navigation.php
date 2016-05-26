@@ -35,17 +35,17 @@
 
 
 
-<script>
-  (function() {
-    var cx = '003313917530969506436:2zxrwmrm8da';
-    var gcse = document.createElement('script');
-    gcse.type = 'text/javascript';
-    gcse.async = true;
-    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-    var s = document.getElementsByTagName('script')[0];
-    s.parentNode.insertBefore(gcse, s);
-  })();
-</script>
+				<script>
+				  (function() {
+				    var cx = '003313917530969506436:2zxrwmrm8da';
+				    var gcse = document.createElement('script');
+				    gcse.type = 'text/javascript';
+				    gcse.async = true;
+				    gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
+				    var s = document.getElementsByTagName('script')[0];
+				    s.parentNode.insertBefore(gcse, s);
+				  })();
+				</script>
 
 
 				<li id="small_hide">
@@ -56,11 +56,5 @@
 	</div>
 
 	  <div id="searchbar" class="clearfix">
-<!-- 	    <form id="searchform" method="get" action="#">
-	      <button type="submit" id="searchsubmit" class="fa fa-search"></button>
-	      <input type="text" name="s" id="s" placeholder="поиск..." autocomplete="off">     
-	    </form> -->
-
-	    <gcse:searchbox-only></gcse:searchbox-only>
-
+	    <gcse:searchbox-only></gcse:searchbox-only>\
 	  </div>
