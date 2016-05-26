@@ -65,3 +65,45 @@ jQuery(document).ready(function() {
 		else jQuery('.feedback').addClass('shake');
 	}, 2000);
 });
+
+
+
+// provans colors
+jQuery(document).ready(function($) {
+	
+	$('.provans__item-color').on('click', function(event) {
+		event.preventDefault();
+
+		var colorId = $(this).attr('data-colorid');
+
+		if( provansColors.array[colorId] ) {
+
+			var pic1_Main = provansColors.array[colorId].pic1;
+			var pic2 = provansColors.array[colorId].pic2;
+			var pic3 = provansColors.array[colorId].pic3;
+			var pic4 = provansColors.array[colorId].pic4;
+			var pic5 = provansColors.array[colorId].pic5;
+
+			$('.provanscolorpic.-pic1').css('backgroundImage', 'url(' + pic1_Main + ')');
+			$('.provanscolorpic.-pic2').css('backgroundImage', 'url(' + pic2 + ')');
+			$('.provanscolorpic.-pic3').css('backgroundImage', 'url(' + pic3 + ')');
+			$('.provanscolorpic.-pic4').css('backgroundImage', 'url(' + pic4 + ')');
+			$('.provanscolorpic.-pic5').css('backgroundImage', 'url(' + pic5 + ')');
+
+		}
+
+	});
+
+
+	$('.provans__item-rakurs.provanscolorpic').on('click', function(event) {
+		event.preventDefault();
+		
+		var mainPic = $('.provanscolorpic.-pic1').css('backgroundImage');
+		var thisPic = $(this).css('backgroundImage');
+
+		$(this).css('backgroundImage', mainPic);
+		$('.provanscolorpic.-pic1').css('backgroundImage', thisPic);
+
+	});
+
+});

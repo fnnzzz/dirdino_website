@@ -18,80 +18,107 @@ Template Name: provans-cats
 			<section id="main">
 				<div class="container">
 					<header class="major">
-						<h2>Мебель Прованс — шкафы</h2>
+						<h2><?php the_title(); ?></h2>
 					</header>
 					<section>
 						<div class="cats_prov row">
 
 							<div class="6u">
-								<div class="provans__block -category -main" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_shkafy.jpg');">
+								<div class="provans__block -category -main" 
+									 style="background-image: url('<?php the_field('provans_subcategorypic');  ?>');">
 									<h3 class="provans__block-title">
-										<span>Кухни</span>
+										<span><?php the_field('provans_subcategoryname');  ?></span>
 									</h3>
 								</div>
 							</div>
 							
 							<div class="6u$">
 								<div class="row">
-									<div class="6u">
-										<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_kuukhni.jpg');">
-											<h3 class="provans__block-title -small">
-												<a href="<?php echo get_page_link(153); ?>">Кухня #1</a>
-											</h3>
-										</div>
-										<div class="provans__block -category -small" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_prikh.jpg');">
-											<h3 class="provans__block-title -small">
-												<a href="<?php echo get_page_link(153); ?>">Кухня #2</a>
-											</h3>
-										</div>
-									</div>
+
+
+									<?php 
+										if( have_rows('provans_subcategory') ):
+
+											$firstCounter = 0;
 									
-									<div class="6u">
-										<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_lstn.jpg');">
-											<h3 class="provans__block-title -small">
-												<a href="<?php echo get_page_link(153); ?>">Кухня #3</a>
-											</h3>
-										</div>
-										<div class="provans__block -category -small" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_gost.jpg');">
-											<h3 class="provans__block-title -small">
-												<a href="<?php echo get_page_link(153); ?>">Кухня #4</a>
-											</h3>
-										</div>
-									</div>
+										    while ( have_rows('provans_subcategory') ) : the_row();
+
+									?>	
+												<?php  if($firstCounter < 2) : ?>
+
+												<div class="6u">
+													<div class="provans__block -category -small -top" 
+														 style="background-image: url('<?php the_sub_field('provans_subc_pic'); ?>');">
+														
+														<h3 class="provans__block-title -small">
+															<a href="<?php the_sub_field('provans_subc_link') ?>"><?php the_sub_field('provans_subc_name') ?></a>
+														</h3>
+
+													</div>
+
+													<?php the_row(); ?>
+
+													<div class="provans__block -category -small" 
+														 style="background-image: url('<?php the_sub_field('provans_subc_pic'); ?>');">
+														<h3 class="provans__block-title -small">
+															<a href="<?php the_sub_field('provans_subc_link') ?>"><?php the_sub_field('provans_subc_name') ?></a>
+														</h3>
+													</div>
+												</div>
+
+												<?php 
+													endif; 
+													$firstCounter++;
+												?>
+
+									<?php
+										    endwhile;
+
+										endif;
+
+									?>
+
+
+
+							
 
 								</div>
 							</div>
 
 							<div class="12u$ provans__cats-bottom">
 								<div class="row 75%">
-									<div class="3u">
-										<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_besedki.jpg');">
-											<h3 class="provans__block-title -small">
-												<a href="<?php echo get_page_link(153); ?>">Еще кухня</a>
-											</h3>
-										</div>
-									</div>
-									<div class="3u">
-										<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_lstn.jpg');">
-											<h3 class="provans__block-title -small">
-												<a href="<?php echo get_page_link(153); ?>">Еще кухня</a>
-											</h3>
-										</div>
-									</div>
-									<div class="3u">
-										<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_kuukhni.jpg');">
-											<h3 class="provans__block-title -small">
-												<a href="<?php echo get_page_link(153); ?>">Еще кухня</a>
-											</h3>
-										</div>
-									</div>
-									<div class="3u">
-										<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_gost.jpg');">
-											<h3 class="provans__block-title -small">
-												<a href="<?php echo get_page_link(153); ?>">Еще кухня</a>
-											</h3>
-										</div>
-									</div>
+									
+									<?php 
+										if( have_rows('provans_subcategory') ):
+
+											$secondCounter = 0;
+									
+										    while ( have_rows('provans_subcategory') ) : the_row();
+
+									?>	
+												<?php  if($secondCounter > 3) : ?>
+
+													<div class="3u">
+														<div class="provans__block -category -small -top" 
+															 style="background-image: url('<?php the_sub_field('provans_subc_pic'); ?>');">
+															<h3 class="provans__block-title -small">
+																<a href="<?php the_sub_field('provans_subc_link'); ?>"><?php the_sub_field('provans_subc_name'); ?></a>
+															</h3>
+														</div>
+													</div>
+
+												<?php 
+													endif; 
+													$secondCounter++;
+												?>
+
+									<?php
+										    endwhile;
+										    
+										endif;
+
+									?>
+									
 								</div>
 							</div>
 

@@ -16,7 +16,7 @@
 					<li><a href="#learn" class="button special read_scroll">Ознакомиться</a></li>
 				</ul>
 			</section>
-
+			
 		<!-- One -->
 			<section id="one" class="wrapper style1">
 				<div class="container">
@@ -55,6 +55,25 @@
 								<ul class="actions">
 									<li><a href="<?php echo get_theme_mod( 'main_link_2' ); ?>" class="button alt"><?php echo get_theme_mod( 'main_textlink_2' ); ?></a></li>
 								</ul>
+							</div>
+						</div>
+					</section>
+					<section class="feature">
+						<div class="row 200%">
+							<div class="8u 12u$(medium)">
+								<header class="major">
+									<h2><?php echo get_theme_mod( 'main_title_1' ); ?></h2>
+									<p><?php echo get_theme_mod( 'main_subtitle_1' ); ?></p>
+								</header>
+								<p><?php echo get_theme_mod( 'main_descr_1' ); ?></p>
+								<ul class="actions">
+									<li><a href="<?php echo get_theme_mod( 'main_link_1' ); ?>" class="button alt"><?php echo get_theme_mod( 'main_textlink_1' ); ?></a></li>
+								</ul>
+							</div>
+							<div class="4u$ 12u$(medium) important(medium)">
+								<span class="image fit rounded">
+									<img src="<?php echo get_theme_mod( 'main_pic_1' ); ?>" alt="Наши достижения" />
+								</span>
 							</div>
 						</div>
 					</section>

@@ -90,7 +90,7 @@
 		<?php require_once('feedback_modal.php'); ?>
 
 		<div class="feedback">
-			<i data-remodal-target="feedback_modal" class="icon fa fa-comment"></i>
+			<i data-remodal-target="feedback_modal" class="icon fa fa-phone"></i>
 		</div>
 
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/main.css">

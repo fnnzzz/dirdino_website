@@ -211,7 +211,7 @@ textarea {
   left: 0;
   // float: left;
   width: 100%;
-  height: 80px; 
+  height: 75px; 
   border-top: 1px solid #d8d8d8;
   padding-left: 25px;
   padding-right: 10px;
@@ -539,6 +539,7 @@ textarea {
       &.-price {
         & span {
           padding: 5px;
+          font-size: 1.5em;
           background-color: yellow;
         }
       }
@@ -584,8 +585,8 @@ textarea {
   z-index: 999;
   background-color: #DD231D;
   border-radius: 50%;
-  height: 50px;
-  width: 50px;
+  height: 70px;
+  width: 70px;
    position: fixed;
   right: 50px;
   bottom: 30px;
@@ -607,10 +608,10 @@ textarea {
 
   /* vertically-center item   */
   height: 100%;
-  line-height: 50px;
+  line-height: 70px;
   
   /* item properties */
-  font-size: 25px;  
+  font-size: 40px;  
   color: white;
 
   /* animations */
@@ -688,9 +689,71 @@ textarea {
 }
 
 
-// .cats_prov {
-  
-//   & * {
-//     outline: 1px solid red;
-//   }
-// }
+@media only screen and (max-width: 1185px) and (min-width: 980px) {
+  #header #logo {
+    left: 1em;
+
+    & a {
+      font-size: 0.8em;
+    }
+  }
+
+  #header nav > ul > li {
+      margin-left: 1em;
+  } 
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 980px) {
+   #header nav > ul > li {
+      margin-left: 0.7em;
+    }
+}
+
+@media only screen and (max-width: 1400px) and (min-width: 1186px) {
+  #header nav > ul > li {
+    margin-left: 1.05em;
+  }
+}
+
+
+#searchbar {
+  tr {
+    border: none;
+    background: #fff;
+  }
+  & td {
+    padding: 0;
+    background: #fff;
+  }
+  & input {
+    border: none;
+    background: #fff;
+    font-size: 2em;
+    font-family: 'Roboto', sans-serif;
+
+    &:focus {
+      border: none;
+      box-shadow: none;
+    }
+  }
+
+  &  .gsc-input-focus {
+    border: none;
+    
+  } 
+}
+
+
+.gsc-search-button {
+
+    background: url('../images/search_icon.png') !important;
+    background-size: 35% auto !important;
+    background-repeat: no-repeat !important;
+    background-position: 60% center !important;
+
+
+  & input {
+    height: 72px;
+    opacity: 0;
+  }
+}
