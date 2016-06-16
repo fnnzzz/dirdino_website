@@ -9,12 +9,9 @@
 		?>
 
 		<!-- Banner -->
-			<section id="banner">
-				<h2>Мастерская Дырдыно</h2>
-				<p>МЕБЕЛЬ НА ЗАКАЗ В КИЕВЕ И РЕГИОНАХ</p>
-				<ul class="actions">
-					<li><a href="#learn" class="button special read_scroll">Ознакомиться</a></li>
-				</ul>
+			<section id="banner" style="background-image: url('<?php echo get_theme_mod( 'main_banner_pic' ); ?>');">
+				<img class="banner_logo" src="<?php echo get_theme_mod( 'main_banner_logo_pic' ); ?>" alt="Майстерня Дирдино">
+				<img class="banner_descr" src="<?php echo get_theme_mod( 'main_banner_descr_pic' ); ?>" alt="Мебель на заказ в Киеве и регионах">
 			</section>
 			
 		<!-- One -->
@@ -58,16 +55,16 @@
 							</div>
 						</div>
 					</section>
-					<section class="feature">
+					<!-- <section class="feature">
 						<div class="row 200%">
 							<div class="8u 12u$(medium)">
 								<header class="major">
-									<h2><?php echo get_theme_mod( 'main_title_1' ); ?></h2>
-									<p><?php echo get_theme_mod( 'main_subtitle_1' ); ?></p>
+									<h2><?php echo get_theme_mod( 'main_title_3' ); ?></h2>
+									<p><?php echo get_theme_mod( 'main_subtitle_3' ); ?></p>
 								</header>
-								<p><?php echo get_theme_mod( 'main_descr_1' ); ?></p>
+								<p><?php echo get_theme_mod( 'main_descr_3' ); ?></p>
 								<ul class="actions">
-									<li><a href="<?php echo get_theme_mod( 'main_link_1' ); ?>" class="button alt"><?php echo get_theme_mod( 'main_textlink_1' ); ?></a></li>
+									<li><a href="<?php echo get_theme_mod( 'main_link_3' ); ?>" class="button alt"><?php echo get_theme_mod( 'main_textlink_3' ); ?></a></li>
 								</ul>
 							</div>
 							<div class="4u$ 12u$(medium) important(medium)">
@@ -76,7 +73,7 @@
 								</span>
 							</div>
 						</div>
-					</section>
+					</section> -->
 				</div>
 			</section>
 
@@ -86,39 +83,15 @@
 					<header class="major">
 						<h2>Наши последние работы</h2>
 					</header>
+					<!-- <h4>следите за нами на <a href="<?php echo get_theme_mod( 'social_inst' ); ?>">Instagram</a></h4> -->
 				</div>
-				<section class="carousel">
+
+				<section class="carousel" id="insta_mount">
 					<article>
 						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/01.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/01.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/02.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/02.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/03.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/03.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/04.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/04.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/05.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/05.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/01.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/01.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/02.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/02.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/03.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/03.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/04.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/04.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/05.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/05.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
 					</article>
 				</section>
+
 				<div class="container">
 					<ul class="actions align-center">
 						<li><a href="<?php echo get_page_link(19); ?>" class="button alt">Галерея работ</a></li>
@@ -129,3 +102,6 @@
 
 
 	<?php get_footer(); ?>
+		
+
+	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/instafeed.js/instafeed.min.js"></script>

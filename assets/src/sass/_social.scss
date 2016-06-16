@@ -1,13 +1,14 @@
 // variables
 $transition: all 0.35s cubic-bezier(0.310, -0.105, 0.430, 1.590);
-$size: 60px;
+$size: 50px;
 $colors: (
 	"facebook": "#3B5998",
 	"twitter": "#3CF",
 	"google": "#DC4A38",
 	"dribbble": "#F26798",
 	"skype": "#00AFF0",
-	"vk": "#45668e"
+	"vk": "#45668e",
+	"ok": "#F6881F"
 );
 
 .social-buttons {

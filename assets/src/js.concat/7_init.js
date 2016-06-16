@@ -83,6 +83,9 @@
 				hideDelay: 400
 			});
 
+
+
+
 		//  Carousel.
 			$('.carousel').each(function() {
 
@@ -155,15 +158,28 @@
 					}
 					else {
 
-						p.usePopupCaption = true;
+						p.usePopupCaption = false;
 						p.usePopupCloser = true;
-						p.windowMargin = 50;
+						p.windowMargin = 10;
 
 					}
 
-					$this.poptrox(p);
+							
+				 	var feed = new Instafeed({
+				        get: 'user',
+				        userId: '2876333011',
+				        accessToken: '287633301.3a81a9f.db0a880dcbc74787b358c8a1571ed3e5',
+				        limit: '20',
+				        target: 'insta_mount',
+				        resolution: 'standard_resolution',
+				        template: '<article><a href="{{image}}" class="image"><img src="{{image}}" alt="Дырдыно Instagram - {{caption}}" title="Дырдыно Instagram - {{caption}}" /></a> </article>'
+				    });
+				    var instFeed = feed.run();
 
-			});
+				    setTimeout(function() {
+						$this.poptrox(p);				    	
+				    }, 2500)
+			});	
 
 	});
 

@@ -20,7 +20,7 @@ Template Name: contacts-page
 		<!-- Main -->
 			<section id="main">
 				<div class="container">
-					<header class="major">
+					<header class="major header_hide_init" style="opacity: 0;">
 						<h2>Наши контакты</h2>
 					</header>
 					<div class="row 200%">
@@ -50,17 +50,25 @@ Template Name: contacts-page
 									</li>
 								</ul>
 												
-								<h5 class="follow_us_on_social">Присоединяйтесь к нам в соц.сетях</h5>
+								<h5 class="follow_us_on_social">Следите за нами в соц.сетях</h5>
 							
 								<div class="social-buttons">
-									<a href="#" class="social-button facebook">
-										<i class="fa fa-facebook"></i></a>
+									<a target="_blank" href="<?php echo get_theme_mod( 'social_inst' ); ?>" class="social-button instagram">
+										<i class="fa fa-instagram"></i>
+									</a>
+
+									<a target="_blank" href="<?php echo get_theme_mod( 'social_fb' ); ?>" class="social-button facebook">
+										<i class="fa fa-facebook"></i>
+									</a>
 							
-									<a href="#" class="social-button vk">
-										<i class="fa fa-vk"></i></a>	
-							
-									<a href="#" class="social-button skype">
-										<i class="fa fa-skype"></i></a>
+									<a target="_blank" href="<?php echo get_theme_mod( 'social_vk' ); ?>" class="social-button vk">
+										<i class="fa fa-vk"></i>
+									</a>
+
+									<a target="_blank" href="<?php echo get_theme_mod( 'social_ok' ); ?>" class="social-button ok">
+										<i class="fa fa-odnoklassniki"></i>
+									</a>
+
 								</div>
 							
 							</div>

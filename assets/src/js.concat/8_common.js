@@ -1,5 +1,6 @@
 jQuery(window).load(function() { 
     jQuery("#loader").delay(700).fadeOut("slow"); 
+    jQuery(".header_hide_init").css('opacity', '1');
 });
 
 jQuery(document).ready(function($) {
@@ -76,7 +77,11 @@ jQuery(document).ready(function($) {
 
 		var colorId = $(this).attr('data-colorid');
 
+		// console.log(colorId);
+
 		if( provansColors.array[colorId] ) {
+
+			// console.log(provansColors.array[colorId]);
 
 			var pic1_Main = provansColors.array[colorId].pic1;
 			var pic2 = provansColors.array[colorId].pic2;

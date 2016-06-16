@@ -128,6 +128,7 @@ textarea {
 
 
 #footer {
+  padding: 4em 0 2em 0;
 	&.-empty {
 		padding: rem(40) 0 rem(30);
 
@@ -203,7 +204,6 @@ textarea {
 
 
 // custom search
-
 #searchbar {
   display: none;
   position: fixed;
@@ -211,7 +211,7 @@ textarea {
   left: 0;
   // float: left;
   width: 100%;
-  height: 75px; 
+  height: 80px; 
   border-top: 1px solid #d8d8d8;
   padding-left: 25px;
   padding-right: 10px;
@@ -442,7 +442,7 @@ textarea {
     &.-category {
       
       &.-main {
-        height: 305px;
+        height: 449px;
         &:before {
           content: normal;
         }
@@ -459,7 +459,7 @@ textarea {
       }
 
       &.-small {
-        height: 138px;
+        height: 210px;
 
         &.-top {
           margin-bottom: 2em;
@@ -479,6 +479,13 @@ textarea {
 			// font-size: 2.5rem;
       z-index: 5;
 
+
+      &.-newlh {
+        & a, & span {
+          line-height: 449px;
+        }
+      }
+
 			& a,
       & span {
 				position: absolute;
@@ -491,7 +498,7 @@ textarea {
 
       &.-small {
         & a {
-          line-height: 138px;
+          line-height: 210px;
         }
       }
 
@@ -521,6 +528,18 @@ textarea {
 
     &-mainblock {
       height: 300px;
+
+      &.-inside {
+        height: 418px;
+
+        
+        @media only screen and (max-width: 1150px) {
+            & {
+              height: 380px;
+            }
+        }
+
+      }
     }
 
     &-rakurswrap {
@@ -528,8 +547,14 @@ textarea {
     }
 
     &-rakurs {
-      height: 100px;
+      height: 215px;
       cursor: pointer;
+
+        @media screen and (max-width: 1150px) {
+          & {
+            height: 190px;
+          }
+        }
 
     }
 
@@ -744,6 +769,11 @@ textarea {
 }
 
 
+.gsc-control-cse {
+  padding: 0 !important;
+}
+
+
 .gsc-search-button {
 
     background: url('../images/search_icon.png') !important;
@@ -756,4 +786,48 @@ textarea {
     height: 72px;
     opacity: 0;
   }
+}
+
+.gsc-results-wrapper-overlay {
+  margin-top: 65px;
+}
+
+.footer_social {
+  padding-left: 0 !important;
+  margin-top: 4.2em;
+  text-align: center;
+
+  & a {
+    margin-right: 0.5em;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+
+// --------------
+
+
+.banner {
+  &_logo, &_descr {
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  &_logo {
+    max-width: 695px;
+    margin-bottom: 50px;
+  }
+  &_descr {
+    max-width: 353px;
+    margin-bottom: 20px;
+  }
+}
+
+
+
+.poptrox-popup {
+  padding-bottom: 0;
 }

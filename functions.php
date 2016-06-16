@@ -6,6 +6,65 @@ function mytheme_customize_register( $wp_customize ) {
 
 
 
+		$wp_customize->add_setting(
+			'main_banner_pic',
+			array(
+				'default'     => ''
+			)
+		);
+		$wp_customize->add_control(
+			new WP_Customize_Image_Control(
+				$wp_customize,
+				'main_banner_pic', 
+				array(
+				    'label'      => 'Фоновая картинка баннера',
+				    'section'    => 'mainpage_banner', 
+				    'settings'   => 'main_banner_pic' 
+				)
+			)
+		);
+
+
+		$wp_customize->add_setting(
+			'main_banner_logo_pic',
+			array(
+				'default'     => ''
+			)
+		);
+		$wp_customize->add_control(
+			new WP_Customize_Image_Control(
+				$wp_customize,
+				'main_banner_logo_pic', 
+				array(
+				    'label'      => 'Логотип Дырдыно в баннере',
+				    'section'    => 'mainpage_banner', 
+				    'settings'   => 'main_banner_logo_pic' 
+				)
+			)
+		);
+
+
+		$wp_customize->add_setting(
+			'main_banner_descr_pic',
+			array(
+				'default'     => ''
+			)
+		);
+		$wp_customize->add_control(
+			new WP_Customize_Image_Control(
+				$wp_customize,
+				'main_banner_descr_pic', 
+				array(
+				    'label'      => 'Логотип с описанием в баннере',
+				    'section'    => 'mainpage_banner', 
+				    'settings'   => 'main_banner_descr_pic' 
+				)
+			)
+		);
+
+
+
+
 
 		$wp_customize->add_setting(
 			'main_title_1',
@@ -424,9 +483,496 @@ function mytheme_customize_register( $wp_customize ) {
 		);
 
 
+		$wp_customize->add_setting(
+			'social_inst',
+			array(
+				'default'     => 'https://www.instagram.com/dirdino_official/'
+			)
+		);
+		
+		$wp_customize->add_control(
+				'social_inst', 
+				array(
+				    'label'      => 'Instagram',
+				    'section'    => 'socials_section', 
+				    'settings'   => 'social_inst' 
+				)
+		);
+
+
+
+		$wp_customize->add_setting(
+			'social_fb',
+			array(
+				'default'     => 'https://goo.gl/HFbllG'
+			)
+		);
+		
+		$wp_customize->add_control(
+				'social_fb', 
+				array(
+				    'label'      => 'Facebook',
+				    'section'    => 'socials_section', 
+				    'settings'   => 'social_fb' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'social_vk',
+			array(
+				'default'     => 'https://vk.com/dirdinoofficial'
+			)
+		);
+		
+		$wp_customize->add_control(
+				'social_vk', 
+				array(
+				    'label'      => 'VK',
+				    'section'    => 'socials_section', 
+				    'settings'   => 'social_vk' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'social_ok',
+			array(
+				'default'     => 'https://ok.ru/group/53163000463537'
+			)
+		);
+		
+		$wp_customize->add_control(
+				'social_ok', 
+				array(
+				    'label'      => 'Odnoklassniki',
+				    'section'    => 'socials_section', 
+				    'settings'   => 'social_ok' 
+				)
+		);
+
+
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name1',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name1', 
+				array(
+				    'label'      => 'Название Галереи #1',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name1' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link1',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link1', 
+				array(
+				    'label'      => 'Ссылка Галереи #1',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link1' 
+				)
+		);
+
+
+// ***********
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name2',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name2', 
+				array(
+				    'label'      => 'Название Галереи #2',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name2' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link2',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link2', 
+				array(
+				    'label'      => 'Ссылка Галереи #2',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link2' 
+				)
+		);
+
+
+// ***********
+
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name3',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name3', 
+				array(
+				    'label'      => 'Название Галереи #3',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name3' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link3',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link3', 
+				array(
+				    'label'      => 'Ссылка Галереи #3',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link3' 
+				)
+		);
+
+
+// ***********
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name4',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name4', 
+				array(
+				    'label'      => 'Название Галереи #4',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name4' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link4',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link4', 
+				array(
+				    'label'      => 'Ссылка Галереи #4',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link4' 
+				)
+		);
+
+
+// ***********
+
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name5',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name5', 
+				array(
+				    'label'      => 'Название Галереи #5',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name5' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link5',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link5', 
+				array(
+				    'label'      => 'Ссылка Галереи #1',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link5' 
+				)
+		);
+
+
+// ***********
+
+
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name6',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name6', 
+				array(
+				    'label'      => 'Название Галереи #6',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name6' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link6',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link6', 
+				array(
+				    'label'      => 'Ссылка Галереи #6',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link6' 
+				)
+		);
+
+
+// ***********
+
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name7',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name7', 
+				array(
+				    'label'      => 'Название Галереи #7',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name7' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link7',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link7', 
+				array(
+				    'label'      => 'Ссылка Галереи #7',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link7' 
+				)
+		);
+
+
+// ***********
+
+
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name8',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name8', 
+				array(
+				    'label'      => 'Название Галереи #8',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name8' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link8',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link8', 
+				array(
+				    'label'      => 'Ссылка Галереи #8',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link8' 
+				)
+		);
+
+
+// ***********
+
+
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name9',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name9', 
+				array(
+				    'label'      => 'Название Галереи #9',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name9' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link9',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link9', 
+				array(
+				    'label'      => 'Ссылка Галереи #9',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link1' 
+				)
+		);
+
+
+// ***********
+
+
+
+
+
+
+// -------------------
+
+		$wp_customize->add_setting(
+			'gallery_name10',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_name10', 
+				array(
+				    'label'      => 'Название Галереи #10',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_name10' 
+				)
+		);
+
+
+		$wp_customize->add_setting(
+			'gallery_link10',
+			array(
+				'default'     => ''
+			)
+		);
+		
+		$wp_customize->add_control(
+				'gallery_link10', 
+				array(
+				    'label'      => 'Ссылка Галереи #10',
+				    'section'    => 'header_gallery', 
+				    'settings'   => 'gallery_link10' 
+				)
+		);
+
+
+// ***********
+
+
+
+
+
 
 		// ========= ============= ================
 
+
+
+
+		$wp_customize->add_section(
+			'mainpage_banner', 
+			array(
+				'title'     => 'Баннер (главная страница)',
+				'priority'  => 24
+			)
+		);
 
 		$wp_customize->add_section(
 			'mainpage_benefit_section1', 
@@ -460,6 +1006,25 @@ function mytheme_customize_register( $wp_customize ) {
 			array(
 				'title'     => 'Контактные данные',
 				'priority'  => 28
+			)
+		);	
+
+
+		$wp_customize->add_section(
+			'socials_section', 
+			array(
+				'title'     => 'Соц.сети',
+				'priority'  => 29
+			)
+		);		
+
+
+
+		$wp_customize->add_section(
+			'header_gallery', 
+			array(
+				'title'     => 'Галерея - ссылки и названия',
+				'priority'  => 30
 			)
 		);		
 

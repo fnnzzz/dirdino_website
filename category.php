@@ -25,7 +25,7 @@
 
 						?>
 
-						<h2>Блог — категория "<?php echo $category[0]->name ?>" </h2>
+						<h2>Блог — "<?php echo $category[0]->name ?>" </h2>
 					</header>
 					<div class="row 200%">
 						<div class="8u 12u$(medium)">

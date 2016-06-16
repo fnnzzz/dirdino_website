@@ -23,16 +23,16 @@ Template Name: provans-cats
 					<section>
 						<div class="cats_prov row">
 
-							<div class="6u">
+							<div class="6u 12u$(medium)">
 								<div class="provans__block -category -main" 
 									 style="background-image: url('<?php the_field('provans_subcategorypic');  ?>');">
-									<h3 class="provans__block-title">
-										<span><?php the_field('provans_subcategoryname');  ?></span>
+									<h3 class="provans__block-title -newlh">
+										<span class="provans__block-title"><?php the_field('provans_subcategoryname');  ?></span>
 									</h3>
 								</div>
 							</div>
 							
-							<div class="6u$">
+							<div class="6u$ 12u$(medium)">
 								<div class="row">
 
 
@@ -50,9 +50,9 @@ Template Name: provans-cats
 													<div class="provans__block -category -small -top" 
 														 style="background-image: url('<?php the_sub_field('provans_subc_pic'); ?>');">
 														
-														<h3 class="provans__block-title -small">
+														<h4 class="provans__block-title -small">
 															<a href="<?php the_sub_field('provans_subc_link') ?>"><?php the_sub_field('provans_subc_name') ?></a>
-														</h3>
+														</h4>
 
 													</div>
 
@@ -60,9 +60,9 @@ Template Name: provans-cats
 
 													<div class="provans__block -category -small" 
 														 style="background-image: url('<?php the_sub_field('provans_subc_pic'); ?>');">
-														<h3 class="provans__block-title -small">
+														<h4 class="provans__block-title -small">
 															<a href="<?php the_sub_field('provans_subc_link') ?>"><?php the_sub_field('provans_subc_name') ?></a>
-														</h3>
+														</h4>
 													</div>
 												</div>
 
@@ -98,12 +98,12 @@ Template Name: provans-cats
 									?>	
 												<?php  if($secondCounter > 3) : ?>
 
-													<div class="3u">
+													<div class="3u 6u(medium)">
 														<div class="provans__block -category -small -top" 
 															 style="background-image: url('<?php the_sub_field('provans_subc_pic'); ?>');">
-															<h3 class="provans__block-title -small">
+															<h4 class="provans__block-title -small">
 																<a href="<?php the_sub_field('provans_subc_link'); ?>"><?php the_sub_field('provans_subc_name'); ?></a>
-															</h3>
+															</h4>
 														</div>
 													</div>
 

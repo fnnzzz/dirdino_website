@@ -20,6 +20,7 @@
     "Respond": "~1.4.2",
     "bourbon": "~4.2.6",
     "neat": "~1.7.2",
-    "remodal": "^1.0.7"
+    "remodal": "^1.0.7",
+    "instafeed.js": "^1.4.1"
   }
 }

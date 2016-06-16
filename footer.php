@@ -25,7 +25,7 @@
 								</div>
 
 								<div class="12u$">
-									<textarea name="message" id="message" placeholder="Ваше сообщение" rows="6"></textarea>
+									<textarea name="message" id="message" placeholder="Ваше сообщение" rows="7"></textarea>
  								</div>
 
  								<div class="12u$">
@@ -68,14 +68,21 @@
 									<h4 class="icon fa-calendar-o"><span class="label">График работы:</span></h4>
 									<?php echo get_theme_mod( 'contacts_graphic' ); ?>
 								</li>
-								<!-- <li class="">
-									<h4 class="icon fa-twitter"><span class="label">Twitter</span></h4>
-									<a href="#">twitter.com/dirdino</a>
+								<li class="footer_social">
+									<h5>Следите за нами в соц.сетях:</h5>
+									<a target="_blank" href="<?php echo get_theme_mod( 'social_inst' ); ?>">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/inst_icon.png" alt="Instagram">
+									</a>
+									<a target="_blank" href="<?php echo get_theme_mod( 'social_fb' ); ?>">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fb_icon.png" alt="Facebook">
+									</a>
+									<a target="_blank" href="<?php echo get_theme_mod( 'social_vk' ); ?>">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/vk_icon.png" alt="VK">
+									</a>
+									<a target="_blank" href="<?php echo get_theme_mod( 'social_ok' ); ?>">
+										<img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/ok_icon.png" alt="Odnoklassniki">
+									</a>
 								</li>
-								<li class="">
-									<h4 class="icon fa-facebook"><span class="label">Facebook</span></h4>
-									<a href="#">facebook.com/dirdino</a>
-								</li> -->
 							</ul>
 						</section>
 					</div>
@@ -95,8 +102,8 @@
 
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/main.css">
 
-		<?php wp_footer(); ?>
-		
+		<?php wp_footer(); ?>	
+
 		<!--[if lte IE 8]><script src="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/html5shiv.js"></script><![endif]-->
 		<script src="<?php echo get_template_directory_uri(); ?>/assets/dist/js/concat.js"></script>
 		<!--[if lte IE 8]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/v8.css" /><![endif]-->
@@ -105,6 +112,7 @@
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal.css"></link>
 		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal-default-theme.css"></link>
 		<script src="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal.min.js"></script>
+
 		
 
 	</body>
