@@ -1,0 +1,24 @@
+{
+  "name": "bower_packages",
+  "authors": [
+    "Vlad Feninets"
+  ],
+  "description": "config for gulp",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "gulp",
+    "bower",
+    "static"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "devDependencies": {
+    "jquery": "~2.2.0",
+    "normalize-scss": "~3.0.3",
+    "html5shiv": "~3.7.3",
+    "Respond": "~1.4.2",
+    "bourbon": "~4.2.6",
+    "neat": "~1.7.2"
+  }
+}
