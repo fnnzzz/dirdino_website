@@ -62,14 +62,14 @@ Template Name: provans-item
 
 					<div class="row uniform 200%">
 						
-						<div class="6u 8u(medium) -2u(medium) 12u$(small)">
+						<div id="provans_item_left_block" class="6u 8u(medium) -2u(medium) 12u$(small)">
 							<div class="provans__item-mainblock -inside provanscolorpic -pic1" 
 							style="background-image: url('<?php echo $pic1 ?>');">
 								
 							</div>
 						</div>
 
-						<div class="6u 12u$(medium)">
+						<div id="provans_item_right_block" class="6u 12u$(medium)">
 							<h4 class="provans__item-title">Артикул: <?php the_field('provitem_articul'); ?></h4>
 							<h4 class="provans__item-title -price">Цена: <span><?php the_field('provitem_price'); ?>$</span></h4>
 							<h4 class="provans__item-title">
@@ -116,6 +116,7 @@ Template Name: provans-item
 									</div>
 								</div>
 
+						
 								<?php if( strlen($pic3) > 0 ) { ?>
 									<div class="4u">
 										<div class="provans__item-rakurs provanscolorpic -pic3" 
@@ -125,7 +126,7 @@ Template Name: provans-item
 								<?php  } ?>
 
 
-								<?php if( strlen($pic3) > 0 ) { ?>
+								<?php if( strlen($pic4) > 0 ) { ?>
 									<div class="4u">
 										<div class="provans__item-rakurs provanscolorpic -pic4" 
 										     style="background-image: url('<?php echo $pic4 ?>');">
@@ -174,6 +175,37 @@ Template Name: provans-item
 					</div>
 				</div>
 			</section>
+	
+	<script type="text/javascript">
+		
 
+		jQuery(document).ready(function($) {
+			setTimeout(function() {
+				provansItemSetHeight();
+			}, 1000)
+		});
+
+
+		jQuery(window).resize(function() {
+			console.log('resize');
+			provansItemSetHeight();
+		}); 
+
+
+		function provansItemSetHeight() {
+			var provansitemRightBlock = jQuery('#provans_item_right_block').height();
+			
+			if( jQuery(window).width() > 736 ) {
+				jQuery('#provans_item_left_block').height(provansitemRightBlock);
+				jQuery('.provans__item-mainblock.-inside').height(provansitemRightBlock);
+			}
+			else {
+				jQuery('#provans_item_left_block').css('height', '');
+				jQuery('.provans__item-mainblock.-inside').css('height', '');	
+			}
+		}
+
+
+	</script>
 
 	<?php get_footer(); ?>

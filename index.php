@@ -80,28 +80,28 @@
 		<!-- Two -->
 			<section id="two" class="wrapper style1 special">
 				<div class="container">
-					<header class="major">
-						<h2>Наши последние работы</h2>
+
+					<header class="major"> 
+						<h2>Наш Instagram</h2> 
+						<p>вы можете ознакомиться с нашими последними работами и 
+							<a target="_blank" href="<?php echo get_theme_mod( 'social_inst' ); ?>">подписаться</a>
+						</p> 
 					</header>
-					<!-- <h4>следите за нами на <a href="<?php echo get_theme_mod( 'social_inst' ); ?>">Instagram</a></h4> -->
+
 				</div>
 
-				<section class="carousel" id="insta_mount">
-					<article>
-						<a href="<?php echo get_template_directory_uri(); ?>/assets/dist/images/fulls/01.jpg" class="image"><img src="<?php echo get_template_directory_uri(); ?>/assets/dist/images/thumbs/01.jpg" alt="" title="Дырдыно - мебель из дерева" /></a>
-					</article>
-				</section>
+				<section class="carousel" id="insta_mount"></section>
 
 				<div class="container">
 					<ul class="actions align-center">
-						<li><a href="<?php echo get_page_link(19); ?>" class="button alt">Галерея работ</a></li>
+						<li><a href="<?php echo get_theme_mod( 'gallery_link1' ); ?>" class="button alt">Галерея работ</a></li>
 					</ul>
 				</div>
 			</section>
 
 
 
+	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/instafeed.js/instafeed.min.js"></script>
+
 	<?php get_footer(); ?>
 		
-
-	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/instafeed.js/instafeed.min.js"></script>

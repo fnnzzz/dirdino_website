@@ -70,7 +70,7 @@ jQuery(document).ready(function() {
 
 
 // provans colors
-jQuery(document).ready(function($) {
+jQuery(document).ready(function($) { 
 	
 	$('.provans__item-color').on('click', function(event) {
 		event.preventDefault();

@@ -167,8 +167,8 @@
 							
 				 	var feed = new Instafeed({
 				        get: 'user',
-				        userId: '2876333011',
-				        accessToken: '287633301.3a81a9f.db0a880dcbc74787b358c8a1571ed3e5',
+				        userId: '3241543322',
+				        accessToken: '3241543322.3a81a9f.e1b9522bad114255ad900a1d4fb3ac86',
 				        limit: '20',
 				        target: 'insta_mount',
 				        resolution: 'standard_resolution',
