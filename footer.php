@@ -8,37 +8,8 @@
 								<h3>Оставить заявку</h3>
 							</header>
 							
-
-							<div class="row uniform 50%">
-								<div class="12u$">
-									<input type="text" name="name" id="name" value="" placeholder="Ваше имя">
-								</div>
-								
-
-								<div class="6u 12u$(4) 12u$(small)">
-									<input type="email" name="email" id="email" value="" placeholder="Ваш E-Mail">
-								</div>
-								
-
-								<div class="6u 12u$(4) 12u$(small)">
-									<input type="text" name="phone" id="phone" value="" placeholder="Ваш телефон">
-								</div>
-
-								<div class="12u$">
-									<textarea name="message" id="message" placeholder="Ваше сообщение" rows="7"></textarea>
- 								</div>
-
- 								<div class="12u$">
- 									<ul class="actions footer_actions">
- 										<li><input type="submit" value="Отправить" class="special"></li>
- 										<li class="footer_attach_file"> 
- 											<a href="#" class="button special add-file"><span class="fa fa-plus add_file_icon"></span>Прикрепить файл</a>
-											<input type="file">
- 										</li>
- 									</ul>
- 								</div>
-
-							</div>
+							
+							<?php echo do_shortcode( '[contact-form-7 id="2597" title="Footer Contact-Form"]' ); ?>
 							
 						</section>
 		

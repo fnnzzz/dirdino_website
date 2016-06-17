@@ -321,7 +321,8 @@ textarea {
 .footer_attach_file {
   position: relative;
 
-  & input[type='file'] {
+  & span input[type='file'],
+  & .wpcf7-form-control-wrap {
     position: absolute;
     z-index: 10;
     top: 0;
@@ -355,6 +356,18 @@ textarea {
     -o-transition: all .1s linear;
     transition: all .1s linear;
     display: inline-block; 
+
+
+    @media only screen and (min-width: 1150px) {
+      & {
+        width: 205px;
+        right: -78px !important;
+      }
+
+      &:hover {
+        right: -74px !important;
+      }
+    }
 
 
     &:hover {

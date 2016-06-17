@@ -7,33 +7,10 @@
 		  
 
 		  <div class="row modal_feedback">
-			<div class="4u 12u$(small)">
-					<input type="text" name="name" id="name" value="" placeholder="Ваше имя">
-				</div>
-				
 
-				<div class="4u 12u$(small)">
-					<input type="email" name="email" id="email" value="" placeholder="Ваш E-Mail">
-				</div>
-				
 
-				<div class="4u 12u$(small)">
-					<input type="text" name="phone" id="phone" value="" placeholder="Ваш телефон">
-				</div>
+<?php echo do_shortcode( '[contact-form-7 id="2604" title="Contacts-Page Form"]' ); ?>
 
-				<div class="12u">
-					<textarea name="message" id="message" placeholder="Ваше сообщение" rows="5"></textarea>
-					</div>
-
-					<div class="12u$">
-						<ul class="actions footer_actions -modal" style="text-align: center;">
-							<li><input type="submit" value="Отправить" class="special submit_contacts_form"></li>
-							<li class="footer_attach_file"> 
-								<a href="#" class="button special add-file"><span class="fa fa-plus add_file_icon"></span>Прикрепить файл</a>
-							<input type="file">
-							</li>
-						</ul>
-					</div>
 
 
 		  </div>
