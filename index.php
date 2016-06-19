@@ -101,7 +101,7 @@
 
 
 
-	<script src="<?php echo get_template_directory_uri(); ?>/bower_components/instafeed.js/instafeed.min.js"></script>
+	<script src="<?php echo get_template_directory_uri(); ?>/assets/dist/libs/instafeed.js/instafeed.min.js"></script>
 
 	<?php get_footer(); ?>
 		

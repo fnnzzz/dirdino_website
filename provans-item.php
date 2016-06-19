@@ -187,7 +187,6 @@ Template Name: provans-item
 
 
 		jQuery(window).resize(function() {
-			console.log('resize');
 			provansItemSetHeight();
 		}); 
 

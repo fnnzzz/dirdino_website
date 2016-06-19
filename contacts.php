@@ -117,9 +117,9 @@ Template Name: contacts-page
 		<!--[if lte IE 8]><link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/css/ie/v8.css" /><![endif]-->
 
 
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal.css"></link>
-		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal-default-theme.css"></link>
-		<script src="<?php echo get_template_directory_uri(); ?>/bower_components/remodal/dist/remodal.min.js"></script>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/libs/remodal/dist/remodal.min.css"></link>
+		<link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/dist/libs/remodal/dist/remodal-default-theme.min.css"></link>
+		<script src="<?php echo get_template_directory_uri(); ?>/assets/dist/libs/remodal/dist/remodal.min.js"></script>
 
 
 

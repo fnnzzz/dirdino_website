@@ -112,3 +112,28 @@ jQuery(document).ready(function($) {
 	});
 
 });
+
+
+// -----------------------------------
+
+jQuery(document).ready(function($) {
+	provansRakursUp();
+});
+
+function provansRakursUp() {
+
+	if ( jQuery(window).width() <= 980 ) {
+		jQuery('.provans__item-rakurs').on('click', function(event) {
+			event.preventDefault();
+
+			jQuery('html, body').animate({
+		        scrollTop: jQuery('.provans__item-mainblock.-inside').offset().top - ( jQuery('#titleBar').height() + 15 )
+		    }, 400);
+
+		    return false;
+
+
+		});
+	}
+
+}
