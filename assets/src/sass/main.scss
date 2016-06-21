@@ -532,7 +532,27 @@ textarea {
             & {
               margin-top: 60%;
             }
+
+            &.-related a {
+              margin-top: 27%;
+            }
           }
+        }
+
+        &.-related a {
+
+          @media only screen and (max-width: 500px) {
+            & {
+              margin-top: 23%;
+            }
+          }
+
+          @media only screen and (max-width: 400px) {
+            & {
+              margin-top: 32%;
+            }
+          }
+
         }
       }
 

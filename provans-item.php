@@ -139,41 +139,69 @@ Template Name: provans-item
 
 					</div>
 
-					<div class="row provans__interest">
-						<h3>Также вас могут заинтересовать:</h3>
-					</div>
 
-					<div class="row 75%">
-						<div class="3u 6u(small) 12u$(xsmall)">
-							<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_besedki.jpg');">
-								<h4 class="provans__block-title -small">
-									<a href="#">Другой продукт</a>
-								</h4>
-							</div>
-						</div>
-						<div class="3u 6u$(small) 12u$(xsmall)">
-							<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_lstn.jpg');">
-								<h4 class="provans__block-title -small">
-									<a href="#">Другой продукт</a>
-								</h4>
-							</div>
-						</div>
-						<div class="3u 6u(small) 12u$(xsmall)">
-							<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_kuukhni.jpg');">
-								<h4 class="provans__block-title -small">
-									<a href="#">Другой продукт</a>
-								</h4>
-							</div>
-						</div>
-						<div class="3u 6u$(small) 12u$(xsmall)">
-							<div class="provans__block -category -small -top" style="background-image: url('<?php echo get_template_directory_uri(); ?>/assets/dist/images/provans_gost.jpg');">
-								<h4 class="provans__block-title -small">
-									<a href="#">Другой продукт</a>
-								</h4>
-							</div>
-						</div>
-					</div>
-				</div>
+<?php 
+
+
+
+$posts = get_field('provans_related');
+
+if( $posts ): ?>
+
+
+<div class="row provans__interest">
+	<h3>Также вас могут заинтересовать:</h3>
+</div>
+
+<div>
+    <div class="row 75%">
+    <?php foreach( $posts as $post): // variable must be called $post (IMPORTANT) ?>
+        <?php setup_postdata($post); ?>
+        <div class="3u 6u(small) 12u$(xsmall)">
+
+
+            <!-- <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a> -->
+            
+			<?php 
+				$rows = get_field('provitem_repeater' ); 
+				$first_row = $rows[0];
+				$pic1 = $first_row['provitem_rep_pic1' ];
+
+				if( strlen(get_field('provans_subcategorypic')) > 0 ) {
+					$rel_pic = get_field('provans_subcategorypic');
+				}
+				else {
+					$rel_pic = $pic1;
+				}
+
+				$original_title = get_the_title();
+				$rel_title = substr($original_title, 32);
+			?>
+		
+			
+
+			<div class="provans__block -category -small -top" 
+			     style="background-image: url('<?php echo $rel_pic ?>');">
+				
+				<h4 class="provans__block-title -small -related">
+					<a href="<?php the_permalink(); ?>">
+						<?php echo $rel_title ?>
+					</a>
+				</h4>
+
+			</div>
+
+
+
+
+        </div>
+    <?php endforeach; ?>
+    </div>
+  </div>
+    <?php wp_reset_postdata(); // IMPORTANT - reset the $post object so the rest of the page works correctly ?>
+<?php endif; ?>
+
+
 			</section>
 	
 	<script type="text/javascript">
